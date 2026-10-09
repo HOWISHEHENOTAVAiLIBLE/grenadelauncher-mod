@@ -11,7 +11,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Get the .jar
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # <-- Fixed: was v3, now v4
       with:
         name: mod-jar
         path: build/libs/*.jar
