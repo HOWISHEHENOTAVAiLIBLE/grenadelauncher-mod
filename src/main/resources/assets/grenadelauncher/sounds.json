@@ -1,0 +1,20 @@
+{
+  "grenadelauncher:shoot": {
+    "sounds": [
+      {
+        "name": "grenadelauncher:shoot",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "grenadelauncher:explode": {
+    "sounds": [
+      {
+        "name": "grenadelauncher:explode",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  }
+}

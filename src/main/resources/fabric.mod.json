@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "grenadelauncher",
+  "version": "1.0.0",
+  "name": "Grenade Launcher",
+  "description": "Adds a grenade launcher weapon to Minecraft",
+  "authors": [
+    "AI Assistant"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/grenadelauncher",
+    "sources": "https://github.com/yourusername/grenadelauncher-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/grenadelauncher/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.grenadelauncher.GrenadeLauncherMod"
+    ],
+    "client": [
+      "com.example.grenadelauncher.client.GrenadeLauncherClient"
+    ]
+  },
+  "mixins": [
+    "grenadelauncher.mixins.json",
+    {
+      "config": "grenadelauncher.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
