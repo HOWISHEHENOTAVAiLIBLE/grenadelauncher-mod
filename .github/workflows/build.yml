@@ -17,7 +17,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew --no-daemon build
 
       - name: Get the .jar
         uses: actions/upload-artifact@v4
